@@ -1,0 +1,14 @@
+<table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Group</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let exercice of exercises">
+        <td>{{ exercise.name }}</td>
+        <td>{{ exercise.group }}</td>
+        <td>
+            <a [routerLink]="['/exercise', exercise.id]">Go to details</a>
+        </td>
+    </tr>
+</table>
